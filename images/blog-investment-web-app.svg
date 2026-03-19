@@ -1,0 +1,258 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <!-- Deep navy/emerald gradient background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d2b1f;stop-opacity:1" />
+    </linearGradient>
+    <!-- Card gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1e33;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#102a1e;stop-opacity:1" />
+    </linearGradient>
+    <!-- Green accent gradient -->
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <!-- Gold gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d97706;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <!-- Blue gradient -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1d4ed8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <!-- Chart bar gradients -->
+    <linearGradient id="bar1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bar2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bar3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <!-- Glow filter -->
+    <filter id="nodeGlow">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <!-- Line chart path clip -->
+    <clipPath id="chartClip">
+      <rect x="388" y="196" width="344" height="126" />
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)" />
+
+  <!-- Subtle grid -->
+  <g opacity="0.05" stroke="#10b981" stroke-width="0.5">
+    <line x1="0" y1="50" x2="800" y2="50" />
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="250" x2="800" y2="250" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="350" x2="800" y2="350" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="50" y1="0" x2="50" y2="450" />
+    <line x1="100" y1="0" x2="100" y2="450" />
+    <line x1="150" y1="0" x2="150" y2="450" />
+    <line x1="200" y1="0" x2="200" y2="450" />
+    <line x1="250" y1="0" x2="250" y2="450" />
+    <line x1="300" y1="0" x2="300" y2="450" />
+    <line x1="350" y1="0" x2="350" y2="450" />
+  </g>
+
+  <!-- Network connections (left side) -->
+  <g opacity="0.3" stroke="#10b981" stroke-width="1.2" fill="none" stroke-dasharray="4 3">
+    <line x1="70" y1="100" x2="145" y2="170" />
+    <line x1="70" y1="100" x2="145" y2="65" />
+    <line x1="145" y1="170" x2="235" y2="235" />
+    <line x1="145" y1="65" x2="235" y2="130" />
+    <line x1="145" y1="65" x2="235" y2="40" />
+    <line x1="235" y1="130" x2="325" y2="175" />
+    <line x1="235" y1="235" x2="325" y2="175" />
+    <line x1="235" y1="40" x2="325" y2="85" />
+    <line x1="325" y1="175" x2="325" y2="85" />
+  </g>
+
+  <!-- Network nodes -->
+  <g filter="url(#nodeGlow)">
+    <circle cx="70" cy="100" r="10" fill="#059669" opacity="0.9" />
+    <circle cx="70" cy="100" r="5" fill="#6ee7b7" />
+    <circle cx="145" cy="65" r="8" fill="#1d4ed8" opacity="0.9" />
+    <circle cx="145" cy="65" r="4" fill="#93c5fd" />
+    <circle cx="145" cy="170" r="9" fill="#059669" opacity="0.9" />
+    <circle cx="145" cy="170" r="4.5" fill="#6ee7b7" />
+    <circle cx="235" cy="40" r="7" fill="#d97706" opacity="0.9" />
+    <circle cx="235" cy="40" r="3.5" fill="#fde68a" />
+    <circle cx="235" cy="130" r="11" fill="#059669" opacity="0.95" />
+    <circle cx="235" cy="130" r="5.5" fill="#6ee7b7" />
+    <circle cx="235" cy="235" r="8" fill="#1d4ed8" opacity="0.9" />
+    <circle cx="235" cy="235" r="4" fill="#93c5fd" />
+    <circle cx="325" cy="85" r="9" fill="#d97706" opacity="0.9" />
+    <circle cx="325" cy="85" r="4.5" fill="#fde68a" />
+    <circle cx="325" cy="175" r="13" fill="#059669" opacity="0.95" />
+    <circle cx="325" cy="175" r="6.5" fill="#6ee7b7" />
+  </g>
+
+  <!-- Africa continent silhouette (stylized, left middle) -->
+  <g transform="translate(38, 265)" opacity="0.55">
+    <path d="M 50 0 Q 80 5 90 25 Q 100 45 88 65 Q 95 80 88 100 Q 80 120 65 130 Q 55 140 45 125 Q 35 110 25 100 Q 10 85 15 65 Q 5 50 12 30 Q 22 10 50 0 Z"
+      fill="none" stroke="#10b981" stroke-width="1.5" />
+    <!-- Country dots -->
+    <circle cx="50" cy="60" r="3" fill="#10b981" opacity="0.8" />
+    <circle cx="65" cy="75" r="2.5" fill="#3b82f6" opacity="0.8" />
+    <circle cx="40" cy="85" r="2.5" fill="#f59e0b" opacity="0.8" />
+    <circle cx="55" cy="100" r="2" fill="#10b981" opacity="0.7" />
+    <circle cx="35" cy="55" r="2" fill="#f59e0b" opacity="0.7" />
+    <circle cx="70" cy="50" r="2" fill="#3b82f6" opacity="0.7" />
+  </g>
+
+  <!-- Main dashboard card (right side) -->
+  <rect x="370" y="28" width="395" height="396" rx="16" fill="url(#cardGrad)" opacity="0.93" />
+  <rect x="370" y="28" width="395" height="396" rx="16" fill="none" stroke="#10b981" stroke-width="1" opacity="0.4" />
+
+  <!-- Dashboard header bar -->
+  <rect x="370" y="28" width="395" height="48" rx="16" fill="#052e16" opacity="0.85" />
+  <rect x="370" y="60" width="395" height="16" fill="#052e16" opacity="0.85" />
+
+  <!-- Dashboard title -->
+  <text x="400" y="57" font-family="Arial, sans-serif" font-size="11.5" font-weight="700" fill="#6ee7b7" letter-spacing="0.5">INVESTMENT WEB APP — CAPITAL MARKETS INTELLIGENCE PLATFORM</text>
+
+  <!-- Window dots -->
+  <circle cx="386" cy="43" r="5" fill="#ef4444" opacity="0.8" />
+  <circle cx="402" cy="43" r="5" fill="#f59e0b" opacity="0.8" />
+  <circle cx="418" cy="43" r="5" fill="#10b981" opacity="0.8" />
+
+  <!-- KPI Cards row -->
+  <!-- Card 1: Total Market Cap -->
+  <rect x="388" y="94" width="108" height="64" rx="8" fill="#052e16" opacity="0.75" />
+  <text x="404" y="113" font-family="Arial, sans-serif" font-size="8.5" fill="#6ee7b7" font-weight="600" letter-spacing="0.5">MARKET CAP (ZMW)</text>
+  <text x="404" y="140" font-family="Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="800">K84B</text>
+  <text x="452" y="152" font-family="Arial, sans-serif" font-size="9" fill="#34d399">▲ 9.4%</text>
+
+  <!-- Card 2: Active Investors -->
+  <rect x="508" y="94" width="108" height="64" rx="8" fill="#1e3a5f" opacity="0.75" />
+  <text x="524" y="113" font-family="Arial, sans-serif" font-size="8.5" fill="#93c5fd" font-weight="600" letter-spacing="0.5">INVESTORS</text>
+  <text x="524" y="140" font-family="Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="800">247K</text>
+  <text x="570" y="152" font-family="Arial, sans-serif" font-size="9" fill="#34d399">+18%</text>
+
+  <!-- Card 3: PPP Projects -->
+  <rect x="628" y="94" width="108" height="64" rx="8" fill="#2d1b69" opacity="0.75" />
+  <text x="644" y="113" font-family="Arial, sans-serif" font-size="8.5" fill="#c4b5fd" font-weight="600" letter-spacing="0.5">PPP PROJECTS</text>
+  <text x="644" y="140" font-family="Arial, sans-serif" font-size="22" fill="#ffffff" font-weight="800">142</text>
+  <text x="678" y="152" font-family="Arial, sans-serif" font-size="9" fill="#c4b5fd">Active</text>
+
+  <!-- Portfolio performance chart heading -->
+  <text x="388" y="188" font-family="Arial, sans-serif" font-size="10" fill="#6ee7b7" font-weight="700" letter-spacing="0.5">PORTFOLIO PERFORMANCE vs BENCHMARK (19 COUNTRIES)</text>
+
+  <!-- Chart area -->
+  <rect x="388" y="196" width="344" height="126" rx="6" fill="#020f07" opacity="0.6" />
+
+  <!-- Y-axis labels -->
+  <text x="392" y="316" font-family="Arial, sans-serif" font-size="8" fill="#4b5563">0</text>
+  <text x="392" y="289" font-family="Arial, sans-serif" font-size="8" fill="#4b5563">25</text>
+  <text x="392" y="262" font-family="Arial, sans-serif" font-size="8" fill="#4b5563">50</text>
+  <text x="392" y="235" font-family="Arial, sans-serif" font-size="8" fill="#4b5563">75</text>
+  <text x="392" y="208" font-family="Arial, sans-serif" font-size="8" fill="#4b5563">100</text>
+
+  <!-- Grid lines -->
+  <g stroke="#0f2d1a" stroke-width="1" opacity="0.7">
+    <line x1="404" y1="316" x2="724" y2="316" />
+    <line x1="404" y1="289" x2="724" y2="289" />
+    <line x1="404" y1="262" x2="724" y2="262" />
+    <line x1="404" y1="235" x2="724" y2="235" />
+    <line x1="404" y1="208" x2="724" y2="208" />
+  </g>
+
+  <!-- Portfolio line (green) -->
+  <polyline points="410,290 445,275 480,260 515,250 550,240 585,230 620,215 655,220 690,208 720,212"
+    stroke="#10b981" stroke-width="2.5" fill="none" clip-path="url(#chartClip)" stroke-linejoin="round" />
+  <!-- Portfolio area fill -->
+  <polygon points="410,290 445,275 480,260 515,250 550,240 585,230 620,215 655,220 690,208 720,212 720,316 410,316"
+    fill="#10b981" opacity="0.08" clip-path="url(#chartClip)" />
+
+  <!-- Benchmark line (blue dashed) -->
+  <polyline points="410,295 445,285 480,278 515,268 550,260 585,255 620,248 655,242 690,238 720,235"
+    stroke="#3b82f6" stroke-width="2" fill="none" clip-path="url(#chartClip)" stroke-dasharray="5 3" stroke-linejoin="round" />
+
+  <!-- X-axis labels -->
+  <text x="410" y="330" font-family="Arial, sans-serif" font-size="8" fill="#4b5563" text-anchor="middle">Q1</text>
+  <text x="480" y="330" font-family="Arial, sans-serif" font-size="8" fill="#4b5563" text-anchor="middle">Q2</text>
+  <text x="550" y="330" font-family="Arial, sans-serif" font-size="8" fill="#4b5563" text-anchor="middle">Q3</text>
+  <text x="620" y="330" font-family="Arial, sans-serif" font-size="8" fill="#4b5563" text-anchor="middle">Q4</text>
+  <text x="690" y="330" font-family="Arial, sans-serif" font-size="8" fill="#4b5563" text-anchor="middle">Q5</text>
+
+  <!-- Chart legend -->
+  <rect x="595" y="196" width="10" height="5" rx="1" fill="#10b981" />
+  <text x="608" y="202" font-family="Arial, sans-serif" font-size="8" fill="#9ca3af">Portfolio</text>
+  <rect x="652" y="196" width="10" height="5" rx="1" fill="#3b82f6" />
+  <text x="665" y="202" font-family="Arial, sans-serif" font-size="8" fill="#9ca3af">Benchmark</text>
+
+  <!-- Bottom two panels -->
+  <!-- SOE Monitor panel -->
+  <rect x="388" y="340" width="162" height="68" rx="8" fill="#0a0f1e" opacity="0.85" />
+  <text x="400" y="357" font-family="Arial, sans-serif" font-size="9" fill="#3b82f6" font-weight="700" letter-spacing="0.5">SOE SOCIAL CREDIT SCORES</text>
+  <!-- Score bars -->
+  <rect x="400" y="363" width="130" height="5" rx="2" fill="#1e293b" />
+  <rect x="400" y="363" width="122" height="5" rx="2" fill="#10b981" />
+  <text x="534" y="369" font-family="Arial, sans-serif" font-size="8" fill="#6ee7b7">AAA</text>
+  <rect x="400" y="374" width="130" height="5" rx="2" fill="#1e293b" />
+  <rect x="400" y="374" width="104" height="5" rx="2" fill="#3b82f6" />
+  <text x="534" y="380" font-family="Arial, sans-serif" font-size="8" fill="#93c5fd">AA+</text>
+  <rect x="400" y="385" width="130" height="5" rx="2" fill="#1e293b" />
+  <rect x="400" y="385" width="85" height="5" rx="2" fill="#f59e0b" />
+  <text x="534" y="391" font-family="Arial, sans-serif" font-size="8" fill="#fde68a">BBB</text>
+  <text x="400" y="402" font-family="Arial, sans-serif" font-size="7.5" fill="#6b7280">ZESCO · ZRL · ZCCM-IH · RDA</text>
+
+  <!-- Risk engine panel -->
+  <rect x="560" y="340" width="175" height="68" rx="8" fill="#0a0f1e" opacity="0.85" />
+  <text x="572" y="357" font-family="Arial, sans-serif" font-size="9" fill="#10b981" font-weight="700" letter-spacing="0.5">INVESTABILITY RISK ENGINE</text>
+  <circle cx="572" cy="369" r="4" fill="#10b981" />
+  <text x="582" y="373" font-family="Arial, sans-serif" font-size="9" fill="#e2e8f0">ZESCO — Score: 850/1000</text>
+  <circle cx="572" cy="383" r="4" fill="#3b82f6" />
+  <text x="582" y="387" font-family="Arial, sans-serif" font-size="9" fill="#e2e8f0">ZRL — Score: 742/1000</text>
+  <circle cx="572" cy="397" r="4" fill="#f59e0b" />
+  <text x="582" y="401" font-family="Arial, sans-serif" font-size="9" fill="#e2e8f0">ABC Mfg — Score: 695/1000</text>
+
+  <!-- Left side title text -->
+  <text x="48" y="200" font-family="Arial, sans-serif" font-size="17" font-weight="800" fill="#6ee7b7" opacity="0.95">Investment</text>
+  <text x="48" y="221" font-family="Arial, sans-serif" font-size="17" font-weight="800" fill="#6ee7b7" opacity="0.95">Web App</text>
+  <text x="48" y="244" font-family="Arial, sans-serif" font-size="11" fill="#10b981" opacity="0.85">Capital Markets · SOE · PPP</text>
+  <text x="48" y="260" font-family="Arial, sans-serif" font-size="11" fill="#10b981" opacity="0.85">SME Finance · Social Credit</text>
+  <text x="48" y="276" font-family="Arial, sans-serif" font-size="10" fill="#059669" opacity="0.7">19 African Countries</text>
+
+  <!-- Module badges -->
+  <rect x="38" y="295" width="90" height="20" rx="4" fill="#059669" opacity="0.7" />
+  <text x="83" y="308" font-family="Arial, sans-serif" font-size="8.5" fill="#ffffff" font-weight="600" text-anchor="middle">Capital Markets</text>
+  <rect x="136" y="295" width="72" height="20" rx="4" fill="#1d4ed8" opacity="0.7" />
+  <text x="172" y="308" font-family="Arial, sans-serif" font-size="8.5" fill="#ffffff" font-weight="600" text-anchor="middle">SOE Monitor</text>
+  <rect x="38" y="320" width="56" height="20" rx="4" fill="#d97706" opacity="0.7" />
+  <text x="66" y="333" font-family="Arial, sans-serif" font-size="8.5" fill="#ffffff" font-weight="600" text-anchor="middle">PPP Portal</text>
+  <rect x="102" y="320" width="68" height="20" rx="4" fill="#7c3aed" opacity="0.7" />
+  <text x="136" y="333" font-family="Arial, sans-serif" font-size="8.5" fill="#ffffff" font-weight="600" text-anchor="middle">Risk Engine</text>
+  <rect x="38" y="345" width="80" height="20" rx="4" fill="#be185d" opacity="0.7" />
+  <text x="78" y="358" font-family="Arial, sans-serif" font-size="8.5" fill="#ffffff" font-weight="600" text-anchor="middle">Social Credit</text>
+  <rect x="126" y="345" width="56" height="20" rx="4" fill="#065f46" opacity="0.7" />
+  <text x="154" y="358" font-family="Arial, sans-serif" font-size="8.5" fill="#ffffff" font-weight="600" text-anchor="middle">Citizens</text>
+
+  <!-- Decorative arc -->
+  <path d="M 10 410 Q 195 335 368 278" stroke="#10b981" stroke-width="1.5" fill="none" opacity="0.2" stroke-dasharray="6 4" />
+  <path d="M 8 395 Q 188 325 363 270" stroke="#3b82f6" stroke-width="1" fill="none" opacity="0.12" stroke-dasharray="4 6" />
+
+  <!-- Bottom label bar -->
+  <rect x="0" y="418" width="800" height="32" fill="#020d07" opacity="0.95" />
+  <text x="400" y="438" font-family="Arial, sans-serif" font-size="11" fill="#10b981" font-weight="600" text-anchor="middle" letter-spacing="1">NEOSOFT TECH · INVESTMENT WEB APP · AFRICA CAPITAL MARKETS PLATFORM</text>
+</svg>

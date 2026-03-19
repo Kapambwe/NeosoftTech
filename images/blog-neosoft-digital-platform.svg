@@ -1,0 +1,239 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <!-- Deep navy-to-blue gradient background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#081446;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1842b6;stop-opacity:1" />
+    </linearGradient>
+    <!-- Card gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#102a7e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#14369a;stop-opacity:1" />
+    </linearGradient>
+    <!-- Green accent gradient -->
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1fb877;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#26d48c;stop-opacity:1" />
+    </linearGradient>
+    <!-- Teal accent gradient -->
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38bdf8;stop-opacity:1" />
+    </linearGradient>
+    <!-- Amber accent gradient -->
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
+    </linearGradient>
+    <!-- Purple accent -->
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:1" />
+    </linearGradient>
+    <!-- Center hub gradient -->
+    <radialGradient id="hubGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1842b6;stop-opacity:1" />
+    </radialGradient>
+    <!-- Glow filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <!-- Node glow -->
+    <filter id="nodeGlow">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <!-- Shadow filter -->
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)" />
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.05" stroke="#93c5fd" stroke-width="0.5">
+    <line x1="0" y1="50" x2="800" y2="50" /><line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="150" x2="800" y2="150" /><line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="250" x2="800" y2="250" /><line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="350" x2="800" y2="350" /><line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="50" y1="0" x2="50" y2="450" /><line x1="100" y1="0" x2="100" y2="450" />
+    <line x1="150" y1="0" x2="150" y2="450" /><line x1="200" y1="0" x2="200" y2="450" />
+    <line x1="250" y1="0" x2="250" y2="450" /><line x1="300" y1="0" x2="300" y2="450" />
+    <line x1="350" y1="0" x2="350" y2="450" /><line x1="400" y1="0" x2="400" y2="450" />
+    <line x1="450" y1="0" x2="450" y2="450" /><line x1="500" y1="0" x2="500" y2="450" />
+    <line x1="550" y1="0" x2="550" y2="450" /><line x1="600" y1="0" x2="600" y2="450" />
+    <line x1="650" y1="0" x2="650" y2="450" /><line x1="700" y1="0" x2="700" y2="450" />
+    <line x1="750" y1="0" x2="750" y2="450" />
+  </g>
+
+  <!-- ── Orbit rings ── -->
+  <circle cx="400" cy="225" r="130" fill="none" stroke="#3b82f6" stroke-width="0.8" stroke-dasharray="6 4" opacity="0.25" />
+  <circle cx="400" cy="225" r="185" fill="none" stroke="#1fb877" stroke-width="0.8" stroke-dasharray="6 4" opacity="0.18" />
+
+  <!-- ── Spoke connectors (center to SaaS nodes) ── -->
+  <g stroke="#3b82f6" stroke-width="1.2" opacity="0.4">
+    <line x1="400" y1="225" x2="270" y2="110" />
+    <line x1="400" y1="225" x2="400" y2="88" />
+    <line x1="400" y1="225" x2="530" y2="110" />
+    <line x1="400" y1="225" x2="550" y2="225" />
+    <line x1="400" y1="225" x2="530" y2="335" />
+    <line x1="400" y1="225" x2="270" y2="335" />
+    <line x1="400" y1="225" x2="252" y2="225" />
+  </g>
+
+  <!-- ── Spoke connectors (center to partner nodes on outer ring) ── -->
+  <g stroke="#1fb877" stroke-width="1.2" opacity="0.35">
+    <line x1="400" y1="225" x2="215" y2="130" />
+    <line x1="400" y1="225" x2="215" y2="320" />
+    <line x1="400" y1="225" x2="585" y2="130" />
+    <line x1="400" y1="225" x2="585" y2="320" />
+  </g>
+
+  <!-- ══ CENTER HUB ══ -->
+  <circle cx="400" cy="225" r="52" fill="url(#hubGrad)" filter="url(#shadow)" />
+  <circle cx="400" cy="225" r="52" fill="none" stroke="#60a5fa" stroke-width="1.5" opacity="0.7" />
+  <!-- NeoSoft logo text -->
+  <text x="400" y="218" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff">NeoSoft</text>
+  <text x="400" y="232" text-anchor="middle" font-family="Arial, sans-serif" font-size="8.5" fill="#93c5fd">Digital Platform</text>
+  <!-- Small green dot indicator -->
+  <circle cx="400" cy="247" r="4" fill="url(#greenGrad)" filter="url(#glow)" />
+
+  <!-- ══ SaaS NODES (inner ring) ══ -->
+
+  <!-- School Management (top-left) -->
+  <rect x="228" y="82" width="82" height="54" rx="10" fill="url(#cardGrad)" filter="url(#shadow)" />
+  <rect x="228" y="82" width="82" height="54" rx="10" fill="none" stroke="#60a5fa" stroke-width="1" opacity="0.6" />
+  <text x="240" y="100" font-family="Arial, sans-serif" font-size="16" fill="#fbbf24">🎓</text>
+  <text x="270" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="7.5" font-weight="600" fill="#bfdbfe">School</text>
+  <text x="270" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#93c5fd">Management</text>
+  <rect x="236" y="120" width="66" height="3" rx="1.5" fill="url(#amberGrad)" opacity="0.8" />
+
+  <!-- Healthcare (top) -->
+  <rect x="357" y="58" width="85" height="54" rx="10" fill="url(#cardGrad)" filter="url(#shadow)" />
+  <rect x="357" y="58" width="85" height="54" rx="10" fill="none" stroke="#60a5fa" stroke-width="1" opacity="0.6" />
+  <text x="370" y="76" font-family="Arial, sans-serif" font-size="16" fill="#f87171">🏥</text>
+  <text x="400" y="76" text-anchor="middle" font-family="Arial, sans-serif" font-size="7.5" font-weight="600" fill="#bfdbfe">Healthcare</text>
+  <text x="400" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#93c5fd">Management</text>
+  <rect x="365" y="97" width="70" height="3" rx="1.5" fill="url(#tealGrad)" opacity="0.8" />
+
+  <!-- Accounting (top-right) -->
+  <rect x="490" y="82" width="82" height="54" rx="10" fill="url(#cardGrad)" filter="url(#shadow)" />
+  <rect x="490" y="82" width="82" height="54" rx="10" fill="none" stroke="#60a5fa" stroke-width="1" opacity="0.6" />
+  <text x="502" y="100" font-family="Arial, sans-serif" font-size="16" fill="#34d399">📊</text>
+  <text x="531" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="7.5" font-weight="600" fill="#bfdbfe">Accounting</text>
+  <text x="531" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#93c5fd">Platform</text>
+  <rect x="498" y="120" width="66" height="3" rx="1.5" fill="url(#greenGrad)" opacity="0.8" />
+
+  <!-- BaaS (right) -->
+  <rect x="548" y="196" width="82" height="54" rx="10" fill="url(#cardGrad)" filter="url(#shadow)" />
+  <rect x="548" y="196" width="82" height="54" rx="10" fill="none" stroke="#60a5fa" stroke-width="1" opacity="0.6" />
+  <text x="559" y="214" font-family="Arial, sans-serif" font-size="16" fill="#60a5fa">🏦</text>
+  <text x="589" y="214" text-anchor="middle" font-family="Arial, sans-serif" font-size="7.5" font-weight="600" fill="#bfdbfe">Banking</text>
+  <text x="589" y="226" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#93c5fd">as a Service</text>
+  <rect x="557" y="234" width="65" height="3" rx="1.5" fill="url(#purpleGrad)" opacity="0.8" />
+
+  <!-- Law Firm (bottom-right) -->
+  <rect x="490" y="308" width="82" height="54" rx="10" fill="url(#cardGrad)" filter="url(#shadow)" />
+  <rect x="490" y="308" width="82" height="54" rx="10" fill="none" stroke="#60a5fa" stroke-width="1" opacity="0.6" />
+  <text x="502" y="326" font-family="Arial, sans-serif" font-size="16" fill="#a78bfa">⚖️</text>
+  <text x="531" y="326" text-anchor="middle" font-family="Arial, sans-serif" font-size="7.5" font-weight="600" fill="#bfdbfe">Law Firm</text>
+  <text x="531" y="338" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#93c5fd">Management</text>
+  <rect x="498" y="346" width="66" height="3" rx="1.5" fill="url(#purpleGrad)" opacity="0.8" />
+
+  <!-- Voter Management (bottom-left) -->
+  <rect x="228" y="308" width="82" height="54" rx="10" fill="url(#cardGrad)" filter="url(#shadow)" />
+  <rect x="228" y="308" width="82" height="54" rx="10" fill="none" stroke="#60a5fa" stroke-width="1" opacity="0.6" />
+  <text x="240" y="326" font-family="Arial, sans-serif" font-size="16" fill="#4ade80">🗳️</text>
+  <text x="270" y="326" text-anchor="middle" font-family="Arial, sans-serif" font-size="7.5" font-weight="600" fill="#bfdbfe">Voter</text>
+  <text x="270" y="338" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#93c5fd">Management</text>
+  <rect x="236" y="346" width="66" height="3" rx="1.5" fill="url(#greenGrad)" opacity="0.8" />
+
+  <!-- Left node (spacer / extra product placeholder) -->
+  <rect x="170" y="196" width="82" height="54" rx="10" fill="url(#cardGrad)" filter="url(#shadow)" />
+  <rect x="170" y="196" width="82" height="54" rx="10" fill="none" stroke="#60a5fa" stroke-width="1" opacity="0.6" />
+  <text x="182" y="214" font-family="Arial, sans-serif" font-size="16" fill="#38bdf8">🛒</text>
+  <text x="211" y="214" text-anchor="middle" font-family="Arial, sans-serif" font-size="7.5" font-weight="600" fill="#bfdbfe">Partner</text>
+  <text x="211" y="226" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#93c5fd">Marketplace</text>
+  <rect x="178" y="234" width="65" height="3" rx="1.5" fill="url(#tealGrad)" opacity="0.8" />
+
+  <!-- ══ PARTNER NODES (outer ring) ══ -->
+
+  <!-- Influencers (outer top-left) -->
+  <rect x="140" y="100" width="90" height="52" rx="10" fill="#0f2a5e" filter="url(#shadow)" />
+  <rect x="140" y="100" width="90" height="52" rx="10" fill="none" stroke="#1fb877" stroke-width="1.2" opacity="0.7" />
+  <text x="152" y="118" font-family="Arial, sans-serif" font-size="15" fill="#fbbf24">📣</text>
+  <text x="185" y="117" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#6ee7b7">Influencers</text>
+  <text x="185" y="129" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#86efac">Promote &amp; Refer</text>
+  <text x="185" y="141" text-anchor="middle" font-family="Arial, sans-serif" font-size="6.5" fill="#4ade80">Earn Commissions</text>
+
+  <!-- Resellers (outer bottom-left) -->
+  <rect x="140" y="295" width="90" height="52" rx="10" fill="#0f2a5e" filter="url(#shadow)" />
+  <rect x="140" y="295" width="90" height="52" rx="10" fill="none" stroke="#1fb877" stroke-width="1.2" opacity="0.7" />
+  <text x="152" y="313" font-family="Arial, sans-serif" font-size="15" fill="#34d399">🤝</text>
+  <text x="185" y="312" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#6ee7b7">Resellers</text>
+  <text x="185" y="324" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#86efac">Onboard Clients</text>
+  <text x="185" y="336" text-anchor="middle" font-family="Arial, sans-serif" font-size="6.5" fill="#4ade80">Deploy Solutions</text>
+
+  <!-- Strategic Partners (outer top-right) -->
+  <rect x="571" y="100" width="92" height="52" rx="10" fill="#0f2a5e" filter="url(#shadow)" />
+  <rect x="571" y="100" width="92" height="52" rx="10" fill="none" stroke="#1fb877" stroke-width="1.2" opacity="0.7" />
+  <text x="583" y="118" font-family="Arial, sans-serif" font-size="15" fill="#60a5fa">🔗</text>
+  <text x="617" y="117" text-anchor="middle" font-family="Arial, sans-serif" font-size="7.5" font-weight="700" fill="#6ee7b7">Strategic</text>
+  <text x="617" y="129" text-anchor="middle" font-family="Arial, sans-serif" font-size="7.5" font-weight="700" fill="#6ee7b7">Partners</text>
+  <text x="617" y="141" text-anchor="middle" font-family="Arial, sans-serif" font-size="6.5" fill="#4ade80">Integration &amp; Consulting</text>
+
+  <!-- Commission (outer bottom-right) -->
+  <rect x="571" y="295" width="92" height="52" rx="10" fill="#0f2a5e" filter="url(#shadow)" />
+  <rect x="571" y="295" width="92" height="52" rx="10" fill="none" stroke="#1fb877" stroke-width="1.2" opacity="0.7" />
+  <text x="583" y="313" font-family="Arial, sans-serif" font-size="15" fill="#fbbf24">💰</text>
+  <text x="617" y="312" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#6ee7b7">Revenue</text>
+  <text x="617" y="324" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#86efac">Commission</text>
+  <text x="617" y="336" text-anchor="middle" font-family="Arial, sans-serif" font-size="6.5" fill="#4ade80">Mgmt</text>
+
+  <!-- ══ TITLE PANEL ══ -->
+  <rect x="0" y="0" width="800" height="46" fill="#000000" opacity="0.35" />
+  <text x="28" y="18" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="#93c5fd" letter-spacing="2">NEOSOFT</text>
+  <text x="28" y="34" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Digital Platform — One Ecosystem</text>
+  <!-- Green pill badge -->
+  <rect x="598" y="12" width="175" height="22" rx="11" fill="url(#greenGrad)" opacity="0.9" />
+  <text x="685" y="27" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#ffffff">SaaS · Partners · Growth</text>
+
+  <!-- ══ BOTTOM STAT BAR ══ -->
+  <rect x="0" y="408" width="800" height="42" fill="#000000" opacity="0.3" />
+  <g font-family="Arial, sans-serif" font-size="8.5" fill="#93c5fd">
+    <text x="40" y="424" font-weight="700" fill="#ffffff">6</text>
+    <text x="40" y="437">SaaS Products</text>
+    <line x1="100" y1="412" x2="100" y2="446" stroke="#3b82f6" stroke-width="0.8" opacity="0.4" />
+    <text x="120" y="424" font-weight="700" fill="#ffffff">3</text>
+    <text x="120" y="437">Partner Types</text>
+    <line x1="185" y1="412" x2="185" y2="446" stroke="#3b82f6" stroke-width="0.8" opacity="0.4" />
+    <text x="204" y="424" font-weight="700" fill="#1fb877">Influencers</text>
+    <text x="204" y="437">Promote &amp; Earn</text>
+    <line x1="270" y1="412" x2="270" y2="446" stroke="#3b82f6" stroke-width="0.8" opacity="0.4" />
+    <text x="288" y="424" font-weight="700" fill="#1fb877">Resellers</text>
+    <text x="288" y="437">Onboard &amp; Support</text>
+    <line x1="370" y1="412" x2="370" y2="446" stroke="#3b82f6" stroke-width="0.8" opacity="0.4" />
+    <text x="388" y="424" font-weight="700" fill="#fbbf24">Commission</text>
+    <text x="388" y="437">Revenue Sharing</text>
+    <line x1="470" y1="412" x2="470" y2="446" stroke="#3b82f6" stroke-width="0.8" opacity="0.4" />
+    <text x="490" y="424" font-weight="700" fill="#60a5fa">kapambwe.github.io</text>
+    <text x="490" y="437" fill="#7dd3fc">/NeosoftWebApp</text>
+  </g>
+
+  <!-- Floating data dots for ambiance -->
+  <g filter="url(#nodeGlow)">
+    <circle cx="88" cy="185" r="3" fill="#1fb877" opacity="0.6" />
+    <circle cx="720" cy="195" r="3" fill="#60a5fa" opacity="0.6" />
+    <circle cx="105" cy="370" r="2.5" fill="#f59e0b" opacity="0.5" />
+    <circle cx="730" cy="375" r="2.5" fill="#a78bfa" opacity="0.5" />
+    <circle cx="65" cy="265" r="2" fill="#34d399" opacity="0.5" />
+    <circle cx="755" cy="260" r="2" fill="#38bdf8" opacity="0.5" />
+  </g>
+</svg>

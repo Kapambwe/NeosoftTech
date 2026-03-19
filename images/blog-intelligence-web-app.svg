@@ -1,0 +1,136 @@
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#020617;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="slateGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0891b2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22d3ee;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-opacity="0.6"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="500" fill="url(#bgGrad)"/>
+  <circle cx="720" cy="100" r="240" fill="#6366f1" opacity="0.06"/>
+  <circle cx="150" cy="400" r="160" fill="#0891b2" opacity="0.06"/>
+
+  <!-- Grid -->
+  <g opacity="0.04">
+    <line x1="0" y1="100" x2="900" y2="100" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="200" x2="900" y2="200" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="300" x2="900" y2="300" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="400" x2="900" y2="400" stroke="white" stroke-width="0.5"/>
+    <line x1="200" y1="0" x2="200" y2="500" stroke="white" stroke-width="0.5"/>
+    <line x1="450" y1="0" x2="450" y2="500" stroke="white" stroke-width="0.5"/>
+    <line x1="700" y1="0" x2="700" y2="500" stroke="white" stroke-width="0.5"/>
+  </g>
+
+  <!-- LEFT PANEL -->
+  <text x="50" y="76" font-size="11" font-weight="700" fill="#a5b4fc" letter-spacing="2.5">DECISION INTELLIGENCE PLATFORM</text>
+  <text x="50" y="120" font-size="36" font-weight="800" fill="white">Intelligence</text>
+  <text x="50" y="157" font-size="36" font-weight="800" fill="#a5b4fc">WebApp</text>
+  <text x="50" y="193" font-size="14" fill="#94a3b8">Entity Resolution · Network Analysis</text>
+  <text x="50" y="213" font-size="14" fill="#94a3b8">AML/CFT · Spatial Intelligence</text>
+
+  <!-- Stat cards -->
+  <rect x="50" y="242" width="105" height="72" rx="10" fill="url(#cardGrad)" stroke="#6366f1" stroke-width="1"/>
+  <text x="102" y="268" font-size="26" font-weight="800" fill="#a5b4fc" text-anchor="middle">99%+</text>
+  <text x="102" y="287" font-size="9.5" fill="#94a3b8" text-anchor="middle">Entity Resolution</text>
+  <text x="102" y="301" font-size="9.5" fill="#94a3b8" text-anchor="middle">Accuracy</text>
+
+  <rect x="167" y="242" width="105" height="72" rx="10" fill="url(#cardGrad)" stroke="#0891b2" stroke-width="1"/>
+  <text x="219" y="268" font-size="26" font-weight="800" fill="#22d3ee" text-anchor="middle">300+</text>
+  <text x="219" y="287" font-size="9.5" fill="#94a3b8" text-anchor="middle">Watchlists</text>
+  <text x="219" y="301" font-size="9.5" fill="#94a3b8" text-anchor="middle">Integrated</text>
+
+  <rect x="284" y="242" width="105" height="72" rx="10" fill="url(#cardGrad)" stroke="#f59e0b" stroke-width="1"/>
+  <text x="336" y="268" font-size="26" font-weight="800" fill="#fbbf24" text-anchor="middle">60×</text>
+  <text x="336" y="287" font-size="9.5" fill="#94a3b8" text-anchor="middle">Faster Analysis</text>
+  <text x="336" y="301" font-size="9.5" fill="#94a3b8" text-anchor="middle">Resolution</text>
+
+  <!-- Feature chips -->
+  <rect x="50" y="332" width="170" height="28" rx="14" fill="#1e293b"/>
+  <text x="135" y="351" font-size="11" fill="#a5b4fc" text-anchor="middle">🕸 Network Graph Analysis</text>
+
+  <rect x="232" y="332" width="160" height="28" rx="14" fill="#1e293b"/>
+  <text x="312" y="351" font-size="11" fill="#a5b4fc" text-anchor="middle">🗺 Spatial Intelligence</text>
+
+  <rect x="50" y="372" width="162" height="28" rx="14" fill="#1e293b"/>
+  <text x="131" y="391" font-size="11" fill="#a5b4fc" text-anchor="middle">🔍 KYC/KYB Workflows</text>
+
+  <rect x="224" y="372" width="168" height="28" rx="14" fill="#1e293b"/>
+  <text x="308" y="391" font-size="11" fill="#a5b4fc" text-anchor="middle">🔒 AML/CFT Screening</text>
+
+  <text x="50" y="452" font-size="12" fill="#a5b4fc" opacity="0.8">kapambwe.github.io/IntelligenceWebApp</text>
+  <text x="50" y="476" font-size="11" fill="#94a3b8" opacity="0.6">NeoSoft Technologies · 17 Domain Apps · Anti-Corruption</text>
+
+  <!-- RIGHT PANEL: Network graph visualization -->
+  <rect x="462" y="38" width="410" height="424" rx="14" fill="#0f172a" opacity="0.85" filter="url(#shadow)"/>
+  <text x="667" y="68" font-size="11" font-weight="700" fill="#a5b4fc" text-anchor="middle" letter-spacing="1">ENTITY NETWORK ANALYSIS</text>
+
+  <!-- Center node - Government Entity -->
+  <circle cx="667" cy="240" r="36" fill="url(#slateGrad)" filter="url(#glow)"/>
+  <text x="667" y="236" font-size="9" font-weight="700" fill="white" text-anchor="middle">GOV</text>
+  <text x="667" y="250" font-size="9" font-weight="700" fill="white" text-anchor="middle">ENTITY</text>
+
+  <!-- Connecting lines -->
+  <line x1="667" y1="204" x2="667" y2="148" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="635" y1="220" x2="564" y2="176" stroke="#ef4444" stroke-width="2" stroke-dasharray="4,2"/>
+  <line x1="699" y1="220" x2="770" y2="176" stroke="#0891b2" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="635" y1="260" x2="564" y2="300" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="699" y1="260" x2="770" y2="300" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="667" y1="276" x2="667" y2="330" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="4,2"/>
+
+  <!-- Satellite nodes -->
+  <!-- Top - Contractor -->
+  <circle cx="667" cy="128" r="26" fill="#1e293b" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="667" y="124" font-size="8.5" fill="#a5b4fc" text-anchor="middle">CONTRACTOR</text>
+  <text x="667" y="136" font-size="8.5" fill="#a5b4fc" text-anchor="middle">ABC Ltd</text>
+
+  <!-- Left - Flagged -->
+  <circle cx="540" cy="160" r="26" fill="#1e293b" stroke="#ef4444" stroke-width="2"/>
+  <text x="540" y="156" font-size="8" fill="#fca5a5" text-anchor="middle">⚠ PEP</text>
+  <text x="540" y="168" font-size="8" fill="#fca5a5" text-anchor="middle">DIRECTOR</text>
+
+  <!-- Right - Bank -->
+  <circle cx="794" cy="160" r="26" fill="#1e293b" stroke="#0891b2" stroke-width="1.5"/>
+  <text x="794" y="156" font-size="8.5" fill="#22d3ee" text-anchor="middle">BANK</text>
+  <text x="794" y="168" font-size="8.5" fill="#22d3ee" text-anchor="middle">ACCOUNT</text>
+
+  <!-- Bottom-left - Land -->
+  <circle cx="540" cy="314" r="26" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="540" y="310" font-size="8.5" fill="#fbbf24" text-anchor="middle">LAND</text>
+  <text x="540" y="322" font-size="8.5" fill="#fbbf24" text-anchor="middle">PARCEL</text>
+
+  <!-- Bottom-right - Supplier -->
+  <circle cx="794" cy="314" r="26" fill="#1e293b" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="794" y="310" font-size="8.5" fill="#86efac" text-anchor="middle">SUPPLIER</text>
+  <text x="794" y="322" font-size="8.5" fill="#86efac" text-anchor="middle">XYZ Co</text>
+
+  <!-- Bottom - Procurement -->
+  <circle cx="667" cy="354" r="26" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="667" y="350" font-size="8" fill="#d8b4fe" text-anchor="middle">PROCURE</text>
+  <text x="667" y="362" font-size="8" fill="#d8b4fe" text-anchor="middle">CONTRACT</text>
+
+  <!-- Alert banner -->
+  <rect x="480" y="395" width="370" height="52" rx="8" fill="#1e293b" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="500" y="416" font-size="11" font-weight="700" fill="#fca5a5">⚠ ALERT: Related-Party Conflict Detected</text>
+  <text x="500" y="432" font-size="10" fill="#94a3b8">Director of ABC Ltd shares beneficial owner with XYZ Co</text>
+  <text x="500" y="446" font-size="10" fill="#94a3b8">OFAC watchlist match confirmed · Investigation opened</text>
+</svg>
