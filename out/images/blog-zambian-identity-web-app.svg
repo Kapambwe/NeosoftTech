@@ -1,0 +1,130 @@
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#09090b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="zincGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#52525b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a1a1aa;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1d4ed8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="500" fill="url(#bgGrad)"/>
+  <circle cx="780" cy="90" r="200" fill="#1d4ed8" opacity="0.06"/>
+  <circle cx="100" cy="430" r="160" fill="#059669" opacity="0.06"/>
+
+  <!-- Grid -->
+  <g opacity="0.04">
+    <line x1="0" y1="100" x2="900" y2="100" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="200" x2="900" y2="200" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="300" x2="900" y2="300" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="400" x2="900" y2="400" stroke="white" stroke-width="0.5"/>
+    <line x1="225" y1="0" x2="225" y2="500" stroke="white" stroke-width="0.5"/>
+    <line x1="450" y1="0" x2="450" y2="500" stroke="white" stroke-width="0.5"/>
+    <line x1="675" y1="0" x2="675" y2="500" stroke="white" stroke-width="0.5"/>
+  </g>
+
+  <!-- LEFT PANEL -->
+  <text x="48" y="76" font-size="10.5" font-weight="700" fill="#a1a1aa" letter-spacing="2.5">ZAMBIAN DIGITAL IDENTITY PLATFORM</text>
+  <text x="48" y="122" font-size="34" font-weight="800" fill="white">Zambian</text>
+  <text x="48" y="158" font-size="34" font-weight="800" fill="#a1a1aa">Identity</text>
+  <text x="48" y="190" font-size="24" font-weight="700" fill="#60a5fa">WebApp</text>
+  <text x="48" y="216" font-size="12.5" fill="#94a3b8">NRC · TPIN · PACRA · Biometric</text>
+  <text x="48" y="234" font-size="12.5" fill="#94a3b8">W3C Verifiable Credentials</text>
+
+  <!-- Stat cards -->
+  <rect x="48" y="254" width="106" height="68" rx="10" fill="url(#cardGrad)" stroke="#52525b" stroke-width="1"/>
+  <text x="101" y="278" font-size="22" font-weight="800" fill="#a1a1aa" text-anchor="middle">99.9%</text>
+  <text x="101" y="296" font-size="9.5" fill="#94a3b8" text-anchor="middle">NRC Verify</text>
+  <text x="101" y="310" font-size="9.5" fill="#94a3b8" text-anchor="middle">Accuracy</text>
+
+  <rect x="164" y="254" width="106" height="68" rx="10" fill="url(#cardGrad)" stroke="#1d4ed8" stroke-width="1"/>
+  <text x="217" y="278" font-size="22" font-weight="800" fill="#60a5fa" text-anchor="middle">&lt; 2s</text>
+  <text x="217" y="296" font-size="9.5" fill="#94a3b8" text-anchor="middle">Real-Time</text>
+  <text x="217" y="310" font-size="9.5" fill="#94a3b8" text-anchor="middle">Response</text>
+
+  <rect x="280" y="254" width="106" height="68" rx="10" fill="url(#cardGrad)" stroke="#059669" stroke-width="1"/>
+  <text x="333" y="278" font-size="22" font-weight="800" fill="#34d399" text-anchor="middle">17</text>
+  <text x="333" y="296" font-size="9.5" fill="#94a3b8" text-anchor="middle">Domain Apps</text>
+  <text x="333" y="310" font-size="9.5" fill="#94a3b8" text-anchor="middle">Trust Layer</text>
+
+  <!-- Feature chips -->
+  <rect x="48" y="338" width="128" height="26" rx="13" fill="#1e293b"/>
+  <text x="112" y="356" font-size="10.5" fill="#a1a1aa" text-anchor="middle">🪪 NRC Verification</text>
+
+  <rect x="188" y="338" width="145" height="26" rx="13" fill="#1e293b"/>
+  <text x="260" y="356" font-size="10.5" fill="#60a5fa" text-anchor="middle">🏢 PACRA Integration</text>
+
+  <rect x="48" y="374" width="138" height="26" rx="13" fill="#1e293b"/>
+  <text x="117" y="392" font-size="10.5" fill="#34d399" text-anchor="middle">📷 Biometric KYC</text>
+
+  <rect x="198" y="374" width="135" height="26" rx="13" fill="#1e293b"/>
+  <text x="265" y="392" font-size="10.5" fill="#c4b5fd" text-anchor="middle">🔐 W3C Credentials</text>
+
+  <text x="48" y="452" font-size="12" fill="#a1a1aa" opacity="0.8">kapambwe.github.io/ZambianIdentityWebApp</text>
+  <text x="48" y="474" font-size="11" fill="#94a3b8" opacity="0.6">NeoSoft Technologies · KYC/AML · Identity Layer</text>
+
+  <!-- RIGHT PANEL: Identity verification flow -->
+  <rect x="462" y="36" width="410" height="428" rx="14" fill="#09090b" opacity="0.9" filter="url(#shadow)"/>
+  <text x="667" y="66" font-size="11" font-weight="700" fill="#a1a1aa" text-anchor="middle" letter-spacing="1">IDENTITY VERIFICATION FLOW</text>
+
+  <!-- NRC Card Mock -->
+  <rect x="480" y="78" width="374" height="70" rx="10" fill="url(#blueGrad)" opacity="0.9"/>
+  <text x="502" y="100" font-size="12" font-weight="700" fill="white">🪪 NATIONAL REGISTRATION CARD</text>
+  <text x="502" y="118" font-size="10.5" fill="rgba(255,255,255,0.85)">NRC No: 123456/78/1  ·  Name: Mwamba Chanda</text>
+  <text x="502" y="135" font-size="10" fill="rgba(255,255,255,0.75)">DOB: 1990-03-15  ·  District: Lusaka  ·  ✓ VERIFIED</text>
+
+  <!-- Arrow -->
+  <line x1="667" y1="148" x2="667" y2="162" stroke="#a1a1aa" stroke-width="2"/>
+  <polygon points="662,160 667,168 672,160" fill="#a1a1aa"/>
+
+  <!-- TPIN Check -->
+  <rect x="480" y="168" width="374" height="48" rx="8" fill="#1e293b" stroke="#1d4ed8" stroke-width="1"/>
+  <text x="502" y="187" font-size="11" font-weight="700" fill="#60a5fa">🧾 ZRA TPIN Registry Check</text>
+  <text x="502" y="205" font-size="10" fill="#94a3b8">TPIN: 1000123456  ·  Status: Active  ·  Compliant ✓</text>
+
+  <!-- Arrow -->
+  <line x1="667" y1="216" x2="667" y2="230" stroke="#a1a1aa" stroke-width="2"/>
+  <polygon points="662,228 667,236 672,228" fill="#a1a1aa"/>
+
+  <!-- PACRA Check -->
+  <rect x="480" y="236" width="374" height="48" rx="8" fill="#1e293b" stroke="#059669" stroke-width="1"/>
+  <text x="502" y="255" font-size="11" font-weight="700" fill="#34d399">🏢 PACRA Company Registry</text>
+  <text x="502" y="273" font-size="10" fill="#94a3b8">Reg: 120234567  ·  Directors Verified  ·  Active ✓</text>
+
+  <!-- Arrow -->
+  <line x1="667" y1="284" x2="667" y2="298" stroke="#a1a1aa" stroke-width="2"/>
+  <polygon points="662,296 667,304 672,296" fill="#a1a1aa"/>
+
+  <!-- AML Screening -->
+  <rect x="480" y="304" width="374" height="48" rx="8" fill="#1e293b" stroke="#7c3aed" stroke-width="1"/>
+  <text x="502" y="323" font-size="11" font-weight="700" fill="#c4b5fd">🔒 AML/CFT Sanctions Screening</text>
+  <text x="502" y="341" font-size="10" fill="#94a3b8">OFAC · UN · EU · Bank of Zambia  ·  Clear ✓</text>
+
+  <!-- Arrow -->
+  <line x1="667" y1="352" x2="667" y2="366" stroke="#34d399" stroke-width="2"/>
+  <polygon points="662,364 667,372 672,364" fill="#34d399"/>
+
+  <!-- VC Issuance -->
+  <rect x="480" y="372" width="374" height="52" rx="8" fill="#064e3b" stroke="#059669" stroke-width="1.5"/>
+  <text x="502" y="393" font-size="12" font-weight="700" fill="#34d399">✅ W3C Verifiable Credential Issued</text>
+  <text x="502" y="410" font-size="10" fill="#6ee7b7">Cryptographic attestation · Valid for 17 platform apps</text>
+  <text x="502" y="425" font-size="10" fill="#6ee7b7">DID: did:zambia:nrc:123456-78-1 · Signed by NeoSoft IdP</text>
+</svg>

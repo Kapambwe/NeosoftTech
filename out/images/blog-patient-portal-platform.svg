@@ -1,0 +1,66 @@
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0e3558;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1d4ed8;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#0c1a2e;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="500" fill="url(#bgGrad)" />
+  <circle cx="800" cy="80" r="210" fill="#2563eb" opacity="0.1" />
+  <circle cx="80" cy="450" r="140" fill="#1d4ed8" opacity="0.12" />
+
+  <!-- Heartbeat line -->
+  <polyline points="680,260 720,260 735,220 750,300 765,230 780,280 810,280 840,280" stroke="#ef4444" stroke-width="2.5" fill="none" opacity="0.6" />
+
+  <text x="60" y="80" font-size="13" font-weight="600" fill="#93c5fd" letter-spacing="3">CITIZEN HEALTH WALLET PLATFORM</text>
+  <text x="60" y="130" font-size="34" font-weight="800" fill="white">PatientPortal.WebApp</text>
+  <text x="60" y="165" font-size="20" font-weight="400" fill="#bfdbfe">The Citizen Health Wallet:</text>
+  <text x="60" y="193" font-size="20" font-weight="400" fill="#bfdbfe">A Lifetime Health Record for Every Zambian</text>
+
+  <rect x="60" y="225" width="140" height="70" rx="10" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1" />
+  <text x="130" y="253" font-size="18" font-weight="800" fill="#93c5fd" text-anchor="middle">FHIR</text>
+  <text x="130" y="272" font-size="18" font-weight="800" fill="#93c5fd" text-anchor="middle">R4</text>
+  <text x="130" y="290" font-size="11" fill="#bfdbfe" text-anchor="middle">Interoperable</text>
+
+  <rect x="215" y="225" width="140" height="70" rx="10" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1" />
+  <text x="285" y="253" font-size="24" font-weight="800" fill="#93c5fd" text-anchor="middle">9</text>
+  <text x="285" y="272" font-size="14" fill="#93c5fd" text-anchor="middle">Languages</text>
+  <text x="285" y="290" font-size="11" fill="#bfdbfe" text-anchor="middle">EN FR AR SW CN +</text>
+
+  <rect x="370" y="225" width="140" height="70" rx="10" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1" />
+  <text x="440" y="253" font-size="18" font-weight="800" fill="#93c5fd" text-anchor="middle">NHIMA</text>
+  <text x="440" y="272" font-size="18" font-weight="800" fill="#93c5fd" text-anchor="middle">Linked</text>
+  <text x="440" y="290" font-size="11" fill="#bfdbfe" text-anchor="middle">Insurance Portal</text>
+
+  <rect x="525" y="225" width="140" height="70" rx="10" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1" />
+  <text x="595" y="253" font-size="18" font-weight="800" fill="#93c5fd" text-anchor="middle">85%</text>
+  <text x="595" y="272" font-size="14" fill="#93c5fd" text-anchor="middle">HIPAA</text>
+  <text x="595" y="290" font-size="11" fill="#bfdbfe" text-anchor="middle">100% Frontend</text>
+
+  <rect x="60" y="320" width="185" height="32" rx="16" fill="#1e3a5f" />
+  <text x="152" y="341" font-size="12" fill="#93c5fd" text-anchor="middle">📋 Health Records</text>
+
+  <rect x="257" y="320" width="185" height="32" rx="16" fill="#1e3a5f" />
+  <text x="349" y="341" font-size="12" fill="#93c5fd" text-anchor="middle">📅 Appointments</text>
+
+  <rect x="454" y="320" width="185" height="32" rx="16" fill="#1e3a5f" />
+  <text x="546" y="341" font-size="12" fill="#93c5fd" text-anchor="middle">📹 Telehealth</text>
+
+  <rect x="60" y="365" width="195" height="32" rx="16" fill="#1e3a5f" />
+  <text x="157" y="386" font-size="12" fill="#93c5fd" text-anchor="middle">💊 Med Reminders</text>
+
+  <rect x="267" y="365" width="195" height="32" rx="16" fill="#1e3a5f" />
+  <text x="364" y="386" font-size="12" fill="#93c5fd" text-anchor="middle">👨‍👩‍👧 Family Members</text>
+
+  <text x="60" y="460" font-size="13" fill="#93c5fd" opacity="0.8">kapambwe.github.io/PatientWebApp</text>
+  <text x="60" y="485" font-size="12" fill="#bfdbfe" opacity="0.6">NeoSoft Technologies · Zambia Digital Health Stack</text>
+</svg>

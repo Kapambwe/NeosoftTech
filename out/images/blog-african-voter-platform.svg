@@ -1,0 +1,130 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#0f2d44"/>
+    </linearGradient>
+    <linearGradient id="mapGrad" x1="0" y1="0" x2="0" y2="1" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#0f2336"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Grid lines -->
+  <g opacity="0.05">
+    <line x1="0" y1="105" x2="1200" y2="105" stroke="#ffffff" stroke-width="1"/>
+    <line x1="0" y1="210" x2="1200" y2="210" stroke="#ffffff" stroke-width="1"/>
+    <line x1="0" y1="315" x2="1200" y2="315" stroke="#ffffff" stroke-width="1"/>
+    <line x1="0" y1="420" x2="1200" y2="420" stroke="#ffffff" stroke-width="1"/>
+    <line x1="0" y1="525" x2="1200" y2="525" stroke="#ffffff" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="630" stroke="#ffffff" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="630" stroke="#ffffff" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="630" stroke="#ffffff" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="630" stroke="#ffffff" stroke-width="1"/>
+    <line x1="1000" y1="0" x2="1000" y2="630" stroke="#ffffff" stroke-width="1"/>
+  </g>
+
+  <!-- Africa continent outline (simplified) -->
+  <path d="M420 80 L490 70 L560 80 L610 100 L640 140 L650 200 L640 260 L620 320 L590 380 L560 440 L530 490 L510 520 L500 540 L490 520 L470 490 L445 440 L420 380 L400 320 L390 260 L390 200 L400 140 L420 80Z" fill="url(#mapGrad)" stroke="#10b981" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Location pins on Africa -->
+  <!-- Zambia -->
+  <circle cx="500" cy="400" r="6" fill="#f59e0b" opacity="0.9"/>
+  <circle cx="500" cy="400" r="12" fill="#f59e0b" opacity="0.2"/>
+  <!-- Kenya -->
+  <circle cx="548" cy="310" r="6" fill="#10b981" opacity="0.9"/>
+  <circle cx="548" cy="310" r="12" fill="#10b981" opacity="0.2"/>
+  <!-- Nigeria -->
+  <circle cx="455" cy="290" r="6" fill="#3b82f6" opacity="0.9"/>
+  <circle cx="455" cy="290" r="12" fill="#3b82f6" opacity="0.2"/>
+  <!-- South Africa -->
+  <circle cx="490" cy="490" r="6" fill="#8b5cf6" opacity="0.9"/>
+  <circle cx="490" cy="490" r="12" fill="#8b5cf6" opacity="0.2"/>
+  <!-- Tanzania -->
+  <circle cx="535" cy="350" r="5" fill="#ef4444" opacity="0.9"/>
+  <!-- Uganda -->
+  <circle cx="525" cy="310" r="5" fill="#ec4899" opacity="0.9"/>
+  <!-- Ghana -->
+  <circle cx="440" cy="310" r="5" fill="#14b8a6" opacity="0.9"/>
+
+  <!-- Connection lines between pins -->
+  <line x1="500" y1="400" x2="548" y2="310" stroke="#10b981" stroke-width="0.7" opacity="0.3" stroke-dasharray="4,4"/>
+  <line x1="548" y1="310" x2="525" y2="310" stroke="#ec4899" stroke-width="0.7" opacity="0.3" stroke-dasharray="4,4"/>
+  <line x1="455" y1="290" x2="440" y2="310" stroke="#14b8a6" stroke-width="0.7" opacity="0.3" stroke-dasharray="4,4"/>
+  <line x1="500" y1="400" x2="490" y2="490" stroke="#8b5cf6" stroke-width="0.7" opacity="0.3" stroke-dasharray="4,4"/>
+
+  <!-- Left panel: Stats cards -->
+  <!-- Card 1: Countries -->
+  <rect x="40" y="60" width="220" height="90" rx="12" fill="url(#cardGrad)" stroke="#1e4976" stroke-width="1"/>
+  <text x="60" y="95" font-family="system-ui,sans-serif" font-size="32" font-weight="700" fill="#f59e0b">7</text>
+  <text x="60" y="118" font-family="system-ui,sans-serif" font-size="13" fill="#94a3b8">African Countries</text>
+  <text x="60" y="136" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">Zambia · Kenya · Nigeria · More</text>
+
+  <!-- Card 2: Parties -->
+  <rect x="40" y="168" width="220" height="90" rx="12" fill="url(#cardGrad)" stroke="#1e4976" stroke-width="1"/>
+  <text x="60" y="203" font-family="system-ui,sans-serif" font-size="32" font-weight="700" fill="#10b981">23+</text>
+  <text x="60" y="226" font-family="system-ui,sans-serif" font-size="13" fill="#94a3b8">Political Parties</text>
+  <text x="60" y="244" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">UPND · ANC · NRM · NPP · More</text>
+
+  <!-- Card 3: Modules -->
+  <rect x="40" y="276" width="220" height="90" rx="12" fill="url(#cardGrad)" stroke="#1e4976" stroke-width="1"/>
+  <text x="60" y="311" font-family="system-ui,sans-serif" font-size="32" font-weight="700" fill="#3b82f6">15+</text>
+  <text x="60" y="334" font-family="system-ui,sans-serif" font-size="13" fill="#94a3b8">Platform Modules</text>
+  <text x="60" y="352" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">Voters · Campaigns · Analytics</text>
+
+  <!-- Card 4: Live -->
+  <rect x="40" y="384" width="220" height="90" rx="12" fill="url(#cardGrad)" stroke="#1e4976" stroke-width="1"/>
+  <circle cx="70" cy="420" r="7" fill="#10b981"/>
+  <circle cx="70" cy="420" r="12" fill="#10b981" opacity="0.2"/>
+  <text x="90" y="425" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="#10b981">LIVE</text>
+  <text x="60" y="447" font-family="system-ui,sans-serif" font-size="13" fill="#94a3b8">Demo Platform</text>
+  <text x="60" y="465" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">Try it now → GitHub Pages</text>
+
+  <!-- Right panel: Main content -->
+  <!-- Title area -->
+  <text x="700" y="130" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#10b981" letter-spacing="3">ELECTION INTELLIGENCE</text>
+
+  <text x="700" y="185" font-family="system-ui,sans-serif" font-size="38" font-weight="800" fill="#ffffff" letter-spacing="-0.5">Africa's Voter</text>
+  <text x="700" y="232" font-family="system-ui,sans-serif" font-size="38" font-weight="800" fill="#ffffff" letter-spacing="-0.5">Management</text>
+  <text x="700" y="279" font-family="system-ui,sans-serif" font-size="38" font-weight="800" fill="#f59e0b" letter-spacing="-0.5">Platform</text>
+
+  <text x="700" y="325" font-family="system-ui,sans-serif" font-size="16" fill="#94a3b8" letter-spacing="0.3">The digital intelligence system that wins</text>
+  <text x="700" y="348" font-family="system-ui,sans-serif" font-size="16" fill="#94a3b8" letter-spacing="0.3">elections across the continent.</text>
+
+  <!-- Feature pills -->
+  <rect x="700" y="380" width="130" height="30" rx="15" fill="#10b98120" stroke="#10b981" stroke-width="1"/>
+  <text x="765" y="400" font-family="system-ui,sans-serif" font-size="12" fill="#10b981" text-anchor="middle">Voter Tracking</text>
+
+  <rect x="840" y="380" width="130" height="30" rx="15" fill="#3b82f620" stroke="#3b82f6" stroke-width="1"/>
+  <text x="905" y="400" font-family="system-ui,sans-serif" font-size="12" fill="#3b82f6" text-anchor="middle">Poll Monitoring</text>
+
+  <rect x="980" y="380" width="130" height="30" rx="15" fill="#f59e0b20" stroke="#f59e0b" stroke-width="1"/>
+  <text x="1045" y="400" font-family="system-ui,sans-serif" font-size="12" fill="#f59e0b" text-anchor="middle">AI Analytics</text>
+
+  <rect x="700" y="420" width="130" height="30" rx="15" fill="#8b5cf620" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="765" y="440" font-family="system-ui,sans-serif" font-size="12" fill="#8b5cf6" text-anchor="middle">Canvassing</text>
+
+  <rect x="840" y="420" width="130" height="30" rx="15" fill="#ef444420" stroke="#ef4444" stroke-width="1"/>
+  <text x="905" y="440" font-family="system-ui,sans-serif" font-size="12" fill="#ef4444" text-anchor="middle">GPS Results</text>
+
+  <rect x="980" y="420" width="130" height="30" rx="15" fill="#14b8a620" stroke="#14b8a6" stroke-width="1"/>
+  <text x="1045" y="440" font-family="system-ui,sans-serif" font-size="12" fill="#14b8a6" text-anchor="middle">Fundraising</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="560" width="1200" height="70" fill="#0a1628"/>
+  <text x="700" y="595" font-family="system-ui,sans-serif" font-size="14" fill="#64748b" text-anchor="middle">kapambwe.github.io/VotersWebApp</text>
+  <text x="700" y="618" font-family="system-ui,sans-serif" font-size="12" fill="#334155" text-anchor="middle">Built with Blazor WebAssembly · Deployed on GitHub Pages · Open Demo</text>
+
+  <!-- NeoSoft branding -->
+  <text x="60" y="600" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#10b981">NeoSoft</text>
+  <text x="60" y="618" font-family="system-ui,sans-serif" font-size="11" fill="#475569">Election Technology</text>
+</svg>
