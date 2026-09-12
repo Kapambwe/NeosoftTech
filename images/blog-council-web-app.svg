@@ -1,0 +1,235 @@
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e3a5f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="500" fill="url(#bgGrad)" />
+
+  <!-- Grid overlay -->
+  <g opacity="0.05">
+    <line x1="0" y1="62.5" x2="900" y2="62.5" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="125" x2="900" y2="125" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="187.5" x2="900" y2="187.5" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="250" x2="900" y2="250" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="312.5" x2="900" y2="312.5" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="375" x2="900" y2="375" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="437.5" x2="900" y2="437.5" stroke="white" stroke-width="0.5"/>
+    <line x1="112.5" y1="0" x2="112.5" y2="500" stroke="white" stroke-width="0.5"/>
+    <line x1="225" y1="0" x2="225" y2="500" stroke="white" stroke-width="0.5"/>
+    <line x1="337.5" y1="0" x2="337.5" y2="500" stroke="white" stroke-width="0.5"/>
+    <line x1="450" y1="0" x2="450" y2="500" stroke="white" stroke-width="0.5"/>
+    <line x1="562.5" y1="0" x2="562.5" y2="500" stroke="white" stroke-width="0.5"/>
+    <line x1="675" y1="0" x2="675" y2="500" stroke="white" stroke-width="0.5"/>
+    <line x1="787.5" y1="0" x2="787.5" y2="500" stroke="white" stroke-width="0.5"/>
+  </g>
+
+  <!-- Glow orbs -->
+  <circle cx="160" cy="180" r="120" fill="#f59e0b" opacity="0.05"/>
+  <circle cx="740" cy="320" r="150" fill="#3b82f6" opacity="0.06"/>
+
+  <!-- Left Panel: Title & Description -->
+  <g transform="translate(50, 70)">
+    <!-- Label -->
+    <rect rx="4" width="180" height="22" fill="#f59e0b" opacity="0.15"/>
+    <text x="90" y="15" text-anchor="middle" font-size="10" font-weight="700" letter-spacing="2" fill="#f59e0b" text-transform="uppercase">LOCAL GOVERNMENT · DIGITAL PLATFORM</text>
+
+    <!-- Main Title -->
+    <text y="60" font-size="28" font-weight="800" fill="white">Council Web App</text>
+    <text y="88" font-size="14" fill="#94a3b8">Multi-Tenant Local Government</text>
+    <text y="106" font-size="14" fill="#94a3b8">Management Platform</text>
+
+    <!-- Accent Line -->
+    <rect y="122" width="60" height="3" rx="2" fill="url(#accentGrad)"/>
+
+    <!-- Feature Bullets -->
+    <g transform="translate(0, 145)">
+      <circle cx="6" cy="6" r="5" fill="#10b981" opacity="0.8"/>
+      <text x="18" y="10" font-size="11" fill="#cbd5e1">Budget &amp; Financial Management</text>
+
+      <circle cx="6" cy="26" r="5" fill="#3b82f6" opacity="0.8"/>
+      <text x="18" y="30" font-size="11" fill="#cbd5e1">Procurement &amp; Compliance</text>
+
+      <circle cx="6" cy="46" r="5" fill="#f59e0b" opacity="0.8"/>
+      <text x="18" y="50" font-size="11" fill="#cbd5e1">Ward Development Tracking</text>
+
+      <circle cx="6" cy="66" r="5" fill="#a78bfa" opacity="0.8"/>
+      <text x="18" y="70" font-size="11" fill="#cbd5e1">AI Decision Engine</text>
+
+      <circle cx="6" cy="86" r="5" fill="#f472b6" opacity="0.8"/>
+      <text x="18" y="90" font-size="11" fill="#cbd5e1">Multi-Council Multi-Country</text>
+    </g>
+
+    <!-- Stats Row -->
+    <g transform="translate(0, 310)">
+      <rect rx="8" width="82" height="56" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="41" y="24" text-anchor="middle" font-size="20" font-weight="800" fill="#f59e0b">40+</text>
+      <text x="41" y="40" text-anchor="middle" font-size="9" fill="#64748b">Councils</text>
+
+      <rect x="95" rx="8" width="82" height="56" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="136" y="24" text-anchor="middle" font-size="20" font-weight="800" fill="#10b981">20</text>
+      <text x="136" y="40" text-anchor="middle" font-size="9" fill="#64748b">Modules</text>
+
+      <rect x="190" rx="8" width="82" height="56" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="231" y="24" text-anchor="middle" font-size="20" font-weight="800" fill="#3b82f6">10</text>
+      <text x="231" y="40" text-anchor="middle" font-size="9" fill="#64748b">User Roles</text>
+    </g>
+  </g>
+
+  <!-- Right Panel: Dashboard Mockup -->
+  <g transform="translate(430, 40)">
+    <!-- Main dashboard card -->
+    <rect rx="12" width="420" height="420" fill="url(#cardGrad)" stroke="#1e3a5f" stroke-width="1.5"/>
+
+    <!-- Dashboard header -->
+    <rect rx="12" width="420" height="44" fill="#1e3a5f"/>
+    <rect x="12" y="12" rx="4" width="80" height="20" fill="#0f172a" opacity="0.5"/>
+    <text x="52" y="26" text-anchor="middle" font-size="10" font-weight="600" fill="#94a3b8">Council Dashboard</text>
+
+    <!-- Nav dots -->
+    <circle cx="370" cy="22" r="5" fill="#ef4444" opacity="0.7"/>
+    <circle cx="385" cy="22" r="5" fill="#f59e0b" opacity="0.7"/>
+    <circle cx="400" cy="22" r="5" fill="#10b981" opacity="0.7"/>
+
+    <!-- Stats row -->
+    <g transform="translate(14, 56)">
+      <!-- Stat 1 -->
+      <rect rx="8" width="90" height="64" fill="#0f172a"/>
+      <text x="45" y="22" text-anchor="middle" font-size="9" fill="#64748b">Budget Used</text>
+      <text x="45" y="42" text-anchor="middle" font-size="18" font-weight="800" fill="#10b981">74%</text>
+      <rect x="10" y="52" rx="2" width="70" height="4" fill="#1e293b"/>
+      <rect x="10" y="52" rx="2" width="52" height="4" fill="#10b981" opacity="0.7"/>
+
+      <!-- Stat 2 -->
+      <rect x="100" rx="8" width="90" height="64" fill="#0f172a"/>
+      <text x="145" y="22" text-anchor="middle" font-size="9" fill="#64748b">Procurement</text>
+      <text x="145" y="42" text-anchor="middle" font-size="18" font-weight="800" fill="#3b82f6">18</text>
+      <text x="145" y="55" text-anchor="middle" font-size="8" fill="#3b82f6">Active Bids</text>
+
+      <!-- Stat 3 -->
+      <rect x="200" rx="8" width="90" height="64" fill="#0f172a"/>
+      <text x="245" y="22" text-anchor="middle" font-size="9" fill="#64748b">Tax Compliance</text>
+      <text x="245" y="42" text-anchor="middle" font-size="18" font-weight="800" fill="#f59e0b">91%</text>
+      <rect x="210" y="52" rx="2" width="70" height="4" fill="#1e293b"/>
+      <rect x="210" y="52" rx="2" width="64" height="4" fill="#f59e0b" opacity="0.7"/>
+
+      <!-- Stat 4 -->
+      <rect x="300" rx="8" width="90" height="64" fill="#0f172a"/>
+      <text x="345" y="22" text-anchor="middle" font-size="9" fill="#64748b">Ward Projects</text>
+      <text x="345" y="42" text-anchor="middle" font-size="18" font-weight="800" fill="#a78bfa">34</text>
+      <text x="345" y="55" text-anchor="middle" font-size="8" fill="#a78bfa">In Progress</text>
+    </g>
+
+    <!-- Module grid -->
+    <g transform="translate(14, 136)">
+      <text font-size="9" font-weight="600" fill="#64748b" letter-spacing="1">ACTIVE MODULES</text>
+
+      <!-- Row 1 -->
+      <g transform="translate(0, 16)">
+        <rect rx="6" width="92" height="36" fill="#1e3a5f"/>
+        <text x="46" y="22" text-anchor="middle" font-size="9" fill="#93c5fd">💰 Budget Mgmt</text>
+
+        <rect x="98" rx="6" width="92" height="36" fill="#1e3a5f"/>
+        <text x="144" y="22" text-anchor="middle" font-size="9" fill="#6ee7b7">🏦 Banking Recon</text>
+
+        <rect x="196" rx="6" width="92" height="36" fill="#1e3a5f"/>
+        <text x="242" y="22" text-anchor="middle" font-size="9" fill="#fcd34d">🏗️ Procurement</text>
+
+        <rect x="294" rx="6" width="92" height="36" fill="#1e3a5f"/>
+        <text x="340" y="22" text-anchor="middle" font-size="9" fill="#c4b5fd">📋 Grant Mgmt</text>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(0, 60)">
+        <rect rx="6" width="92" height="36" fill="#1e3a5f"/>
+        <text x="46" y="22" text-anchor="middle" font-size="9" fill="#f9a8d4">🏘️ Market Facility</text>
+
+        <rect x="98" rx="6" width="92" height="36" fill="#1e3a5f"/>
+        <text x="144" y="22" text-anchor="middle" font-size="9" fill="#93c5fd">🏡 Lease Mgmt</text>
+
+        <rect x="196" rx="6" width="92" height="36" fill="#1e3a5f"/>
+        <text x="242" y="22" text-anchor="middle" font-size="9" fill="#6ee7b7">⚠️ Risk Register</text>
+
+        <rect x="294" rx="6" width="92" height="36" fill="#1e3a5f"/>
+        <text x="340" y="22" text-anchor="middle" font-size="9" fill="#fcd34d">📊 Ward Dev</text>
+      </g>
+
+      <!-- Row 3 -->
+      <g transform="translate(0, 104)">
+        <rect rx="6" width="92" height="36" fill="#1e3a5f"/>
+        <text x="46" y="22" text-anchor="middle" font-size="9" fill="#c4b5fd">🤖 AI Decisions</text>
+
+        <rect x="98" rx="6" width="92" height="36" fill="#1e3a5f"/>
+        <text x="144" y="22" text-anchor="middle" font-size="9" fill="#f9a8d4">📜 Tax Compliance</text>
+
+        <rect x="196" rx="6" width="92" height="36" fill="#1e3a5f"/>
+        <text x="242" y="22" text-anchor="middle" font-size="9" fill="#93c5fd">✅ Workflow</text>
+
+        <rect x="294" rx="6" width="92" height="36" fill="#1e3a5f"/>
+        <text x="340" y="22" text-anchor="middle" font-size="9" fill="#6ee7b7">👥 Beneficiary</text>
+      </g>
+    </g>
+
+    <!-- Users / Roles section -->
+    <g transform="translate(14, 320)">
+      <text font-size="9" font-weight="600" fill="#64748b" letter-spacing="1">USER ROLES ONLINE</text>
+      <g transform="translate(0, 16)">
+        <!-- Role pills -->
+        <rect rx="12" width="90" height="20" fill="#0f172a"/>
+        <text x="45" y="14" text-anchor="middle" font-size="9" fill="#f59e0b">Town Clerk</text>
+
+        <rect x="96" rx="12" width="90" height="20" fill="#0f172a"/>
+        <text x="141" y="14" text-anchor="middle" font-size="9" fill="#10b981">Dir. Finance</text>
+
+        <rect x="192" rx="12" width="90" height="20" fill="#0f172a"/>
+        <text x="237" y="14" text-anchor="middle" font-size="9" fill="#3b82f6">Budget Officer</text>
+
+        <rect x="288" rx="12" width="100" height="20" fill="#0f172a"/>
+        <text x="338" y="14" text-anchor="middle" font-size="9" fill="#a78bfa">Procurement Off.</text>
+      </g>
+      <g transform="translate(0, 42)">
+        <rect rx="12" width="90" height="20" fill="#0f172a"/>
+        <text x="45" y="14" text-anchor="middle" font-size="9" fill="#f472b6">Asset Manager</text>
+
+        <rect x="96" rx="12" width="90" height="20" fill="#0f172a"/>
+        <text x="141" y="14" text-anchor="middle" font-size="9" fill="#fbbf24">Property Mgr</text>
+
+        <rect x="192" rx="12" width="90" height="20" fill="#0f172a"/>
+        <text x="237" y="14" text-anchor="middle" font-size="9" fill="#6ee7b7">Councillor</text>
+
+        <rect x="288" rx="12" width="100" height="20" fill="#0f172a"/>
+        <text x="338" y="14" text-anchor="middle" font-size="9" fill="#93c5fd">Auditor</text>
+      </g>
+    </g>
+
+    <!-- Bottom accent bar -->
+    <rect y="406" rx="0" ry="0" width="420" height="14" fill="url(#accentGrad)" opacity="0.6"/>
+    <rect x="0" y="406" rx="0" style="border-bottom-left-radius:12px" width="420" height="14" fill="url(#accentGrad)" opacity="0.6"/>
+    <text x="210" y="417" text-anchor="middle" font-size="8" font-weight="700" fill="#0f172a" letter-spacing="1">ZAMBIA · SOUTH AFRICA · MULTI-COUNTRY SUPPORT</text>
+  </g>
+
+  <!-- Bottom branding -->
+  <text x="50" y="478" font-size="10" fill="#475569">NeoSoft Technologies</text>
+  <text x="450" y="478" text-anchor="middle" font-size="10" fill="#475569">kapambwe.github.io/CouncilWebApp</text>
+  <text x="860" y="478" text-anchor="end" font-size="10" fill="#475569">Local Government GovTech</text>
+</svg>

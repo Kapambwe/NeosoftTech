@@ -1,0 +1,75 @@
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#052e16;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#14532d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#166534;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#052e16;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#16a34a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4ade80;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="500" fill="url(#bgGrad)" />
+
+  <!-- Decorative circles -->
+  <circle cx="750" cy="80" r="200" fill="#15803d" opacity="0.15" />
+  <circle cx="100" cy="420" r="150" fill="#166534" opacity="0.2" />
+
+  <!-- Title area -->
+  <text x="60" y="80" font-size="13" font-weight="600" fill="#4ade80" letter-spacing="3" text-transform="uppercase">FOREST CONSERVATION PLATFORM</text>
+  <text x="60" y="130" font-size="34" font-weight="800" fill="white">ForestWebApp</text>
+  <text x="60" y="165" font-size="20" font-weight="400" fill="#86efac">Zambia&apos;s Digital Guardian of</text>
+  <text x="60" y="193" font-size="20" font-weight="400" fill="#86efac">Forests, Wildlife &amp; Carbon Credits</text>
+
+  <!-- Stats row -->
+  <rect x="60" y="225" width="130" height="70" rx="10" fill="url(#cardGrad)" stroke="#22c55e" stroke-width="1" />
+  <text x="125" y="255" font-size="28" font-weight="800" fill="#4ade80" text-anchor="middle">20</text>
+  <text x="125" y="278" font-size="11" fill="#86efac" text-anchor="middle">Forests &amp; Parks</text>
+
+  <rect x="210" y="225" width="130" height="70" rx="10" fill="url(#cardGrad)" stroke="#22c55e" stroke-width="1" />
+  <text x="275" y="255" font-size="28" font-weight="800" fill="#4ade80" text-anchor="middle">45</text>
+  <text x="275" y="278" font-size="11" fill="#86efac" text-anchor="middle">GPS-Tagged Animals</text>
+
+  <rect x="360" y="225" width="130" height="70" rx="10" fill="url(#cardGrad)" stroke="#22c55e" stroke-width="1" />
+  <text x="425" y="255" font-size="28" font-weight="800" fill="#4ade80" text-anchor="middle">60+</text>
+  <text x="425" y="278" font-size="11" fill="#86efac" text-anchor="middle">Threat Incidents</text>
+
+  <rect x="510" y="225" width="130" height="70" rx="10" fill="url(#cardGrad)" stroke="#22c55e" stroke-width="1" />
+  <text x="575" y="255" font-size="28" font-weight="800" fill="#4ade80" text-anchor="middle">360+</text>
+  <text x="575" y="278" font-size="11" fill="#86efac" text-anchor="middle">Planting Activities</text>
+
+  <!-- Feature tags -->
+  <rect x="60" y="320" width="160" height="32" rx="16" fill="#166534" />
+  <text x="140" y="341" font-size="12" fill="#4ade80" text-anchor="middle">🗺️ Geospatial Maps</text>
+
+  <rect x="232" y="320" width="175" height="32" rx="16" fill="#166534" />
+  <text x="319" y="341" font-size="12" fill="#4ade80" text-anchor="middle">🐘 Wildlife Tracking</text>
+
+  <rect x="419" y="320" width="185" height="32" rx="16" fill="#166534" />
+  <text x="511" y="341" font-size="12" fill="#4ade80" text-anchor="middle">💨 Carbon Accounting</text>
+
+  <rect x="60" y="365" width="190" height="32" rx="16" fill="#166534" />
+  <text x="155" y="386" font-size="12" fill="#4ade80" text-anchor="middle">🔴 Threat Alert System</text>
+
+  <rect x="262" y="365" width="200" height="32" rx="16" fill="#166534" />
+  <text x="362" y="386" font-size="12" fill="#4ade80" text-anchor="middle">🌱 Biodiversity Scoring</text>
+
+  <!-- Right panel - tree illustration (simple) -->
+  <polygon points="800,180 750,300 850,300" fill="#15803d" opacity="0.7" />
+  <polygon points="800,120 730,260 870,260" fill="#16a34a" opacity="0.6" />
+  <rect x="790" y="300" width="20" height="50" fill="#854d0e" opacity="0.8" />
+
+  <polygon points="860,200 820,300 900,300" fill="#15803d" opacity="0.5" />
+  <polygon points="860,155 810,270 910,270" fill="#166534" opacity="0.6" />
+  <rect x="852" y="300" width="16" height="40" fill="#854d0e" opacity="0.7" />
+
+  <!-- URL at bottom -->
+  <text x="60" y="460" font-size="13" fill="#4ade80" opacity="0.8">kapambwe.github.io/ForestWebApp</text>
+  <text x="60" y="485" font-size="12" fill="#86efac" opacity="0.6">NeoSoft Technologies · Zambia Digital Ecosystem</text>
+</svg>
