@@ -1,5 +1,5 @@
 :HL["/_next/static/chunks/7346575d0980e2e8.css","style"]
-:HL["/_next/static/chunks/d297e64620b52d5a.css","style"]
+:HL["/_next/static/chunks/96fba11b41342269.css","style"]
 :HL["/_next/static/media/7c1e39d02e51fd6d-s.p.647be447.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"buildId":"ZFRj9MlTkBsRlb74G4WLb","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"blog","paramType":null,"paramKey":"blog","hasRuntimePrefetch":false,"slots":{"children":{"name":"data-driven-agriculture-zambia","paramType":null,"paramKey":"data-driven-agriculture-zambia","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"xPSRPfZkfEyn1FBwM3Mh4","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"blog","paramType":null,"paramKey":"blog","hasRuntimePrefetch":false,"slots":{"children":{"name":"data-driven-agriculture-zambia","paramType":null,"paramKey":"data-driven-agriculture-zambia","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
