@@ -26,7 +26,7 @@
   <!-- Header Badge -->
   <rect x="50" y="40" width="410" height="36" rx="18" fill="#047857" opacity="0.6" />
   <text x="70" y="63" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#6ee7b7" letter-spacing="1">
-    AGRICONNECT & WORLD BANK DEVELOPMENT FINANCE
+    AGRICONNECT &amp; WORLD BANK DEVELOPMENT FINANCE
   </text>
 
   <!-- Central Interoperability Ecosystem Nodes -->
@@ -44,7 +44,7 @@
   <g transform="translate(80, 100)">
     <rect x="0" y="0" width="160" height="60" rx="10" fill="#1e293b" stroke="#059669" stroke-width="2" />
     <text x="15" y="25" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#ffffff">ResearcherAgric</text>
-    <text x="15" y="43" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">Soil & Seed Trial Data</text>
+    <text x="15" y="43" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">Soil &amp; Seed Trial Data</text>
   </g>
 
   <!-- Line to Node 2 -->
@@ -61,8 +61,8 @@
   <!-- Node 3: Farmers & Extension -->
   <g transform="translate(80, 310)">
     <rect x="0" y="0" width="160" height="60" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="2" />
-    <text x="15" y="25" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Farmers & Extension</text>
-    <text x="15" y="43" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">Digital Wallet & Yield ID</text>
+    <text x="15" y="25" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Farmers &amp; Extension</text>
+    <text x="15" y="43" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">Digital Wallet &amp; Yield ID</text>
   </g>
 
   <!-- Line to Node 4 -->
