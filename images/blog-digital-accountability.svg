@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgDemocracy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e1b4b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0284c7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38bdf8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glowDem">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgDemocracy)" />
+
+  <!-- Grid pattern -->
+  <g opacity="0.1" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="800" y2="90" />
+    <line x1="0" y1="180" x2="800" y2="180" />
+    <line x1="0" y1="270" x2="800" y2="270" />
+    <line x1="0" y1="360" x2="800" y2="360" />
+    <line x1="160" y1="0" x2="160" y2="450" />
+    <line x1="320" y1="0" x2="320" y2="450" />
+    <line x1="480" y1="0" x2="480" y2="450" />
+    <line x1="640" y1="0" x2="640" y2="450" />
+  </g>
+
+  <!-- Title Badge -->
+  <rect x="50" y="40" width="360" height="36" rx="18" fill="#0369a1" opacity="0.6" />
+  <text x="70" y="63" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#7dd3fc" letter-spacing="1">
+    CITIZEN PARTICIPATORY DEMOCRACY
+  </text>
+
+  <!-- Smartphone Container -->
+  <rect x="80" y="100" width="220" height="300" rx="20" fill="#0f172a" stroke="#38bdf8" stroke-width="3" filter="url(#glowDem)" />
+  <rect x="95" y="120" width="190" height="260" rx="10" fill="#1e293b" />
+
+  <!-- Mobile UI Elements: Voting Card -->
+  <rect x="110" y="140" width="160" height="60" rx="8" fill="#334155" />
+  <text x="120" y="160" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#ffffff">CDF Clinic Project Vote</text>
+  <rect x="120" y="172" width="60" height="18" rx="9" fill="#10b981" />
+  <text x="135" y="185" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#ffffff">YES (78%)</text>
+
+  <!-- Mobile UI Elements: Survey Card -->
+  <rect x="110" y="215" width="160" height="70" rx="8" fill="#334155" />
+  <text x="120" y="235" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#ffffff">Ward Budget Survey</text>
+  <rect x="120" y="248" width="140" height="8" rx="4" fill="#475569" />
+  <rect x="120" y="248" width="95" height="8" rx="4" fill="#06b6d4" />
+  <text x="120" y="272" font-family="system-ui, sans-serif" font-size="9" fill="#94a3b8">Submitted • Token #Z8492</text>
+
+  <!-- Mobile UI Elements: Feedback Logged Card -->
+  <rect x="110" y="295" width="160" height="65" rx="8" fill="#334155" />
+  <text x="120" y="315" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#ffffff">Road Maintenance Alert</text>
+  <text x="120" y="332" font-family="system-ui, sans-serif" font-size="10" fill="#38bdf8">Geo-Tagged & Actioned</text>
+
+  <!-- Right Infographic Cards -->
+  <g transform="translate(360, 110)">
+    <rect x="0" y="0" width="390" height="80" rx="12" fill="#1e293b" stroke="#334155" stroke-width="2" />
+    <circle cx="45" cy="40" r="22" fill="#0284c7" opacity="0.3" />
+    <text x="37" y="46" font-family="system-ui, sans-serif" font-size="20" fill="#38bdf8">🗳️</text>
+    <text x="80" y="35" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Direct Project Voting</text>
+    <text x="80" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8">Verifiable voting on Constituency Development Funds (CDF)</text>
+  </g>
+
+  <g transform="translate(360, 210)">
+    <rect x="0" y="0" width="390" height="80" rx="12" fill="#1e293b" stroke="#334155" stroke-width="2" />
+    <circle cx="45" cy="40" r="22" fill="#10b981" opacity="0.3" />
+    <text x="37" y="46" font-family="system-ui, sans-serif" font-size="20" fill="#34d399">📊</text>
+    <text x="80" y="35" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#ffffff">National Citizen Surveys</text>
+    <text x="80" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8">Real-time public sentiment analytics and policy feedback</text>
+  </g>
+
+  <g transform="translate(360, 310)">
+    <rect x="0" y="0" width="390" height="80" rx="12" fill="#1e293b" stroke="#334155" stroke-width="2" />
+    <circle cx="45" cy="40" r="22" fill="#d97706" opacity="0.3" />
+    <text x="37" y="46" font-family="system-ui, sans-serif" font-size="20" fill="#fbbf24">📢</text>
+    <text x="80" y="35" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Civic Grievance & Accountability</text>
+    <text x="80" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8">Geo-tagged incident reports with SLA enforcement</text>
+  </g>
+</svg>

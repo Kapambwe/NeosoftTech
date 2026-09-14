@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgAgriFinance" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#064e3b;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#022c22;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glowAgri">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgAgriFinance)" />
+
+  <!-- Background Agro-Pattern -->
+  <g opacity="0.1" stroke="#34d399" stroke-width="1">
+    <circle cx="150" cy="150" r="100" fill="none" />
+    <circle cx="150" cy="150" r="200" fill="none" />
+    <circle cx="650" cy="300" r="150" fill="none" />
+  </g>
+
+  <!-- Header Badge -->
+  <rect x="50" y="40" width="410" height="36" rx="18" fill="#047857" opacity="0.6" />
+  <text x="70" y="63" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#6ee7b7" letter-spacing="1">
+    AGRICONNECT & WORLD BANK DEVELOPMENT FINANCE
+  </text>
+
+  <!-- Central Interoperability Ecosystem Nodes -->
+  <!-- Center Node: AgriConnect Core -->
+  <g transform="translate(340, 180)">
+    <circle cx="60" cy="60" r="55" fill="#065f46" stroke="#34d399" stroke-width="3" filter="url(#glowAgri)" />
+    <text x="32" y="58" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#ffffff">AgriConnect</text>
+    <text x="42" y="74" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#6ee7b7">Engine</text>
+  </g>
+
+  <!-- Surrounding Nodes with Connecting Lines -->
+  <!-- Line to Node 1 -->
+  <line x1="190" y1="140" x2="340" y2="210" stroke="#34d399" stroke-width="2" stroke-dasharray="4" />
+  <!-- Node 1: ResearcherAgric -->
+  <g transform="translate(80, 100)">
+    <rect x="0" y="0" width="160" height="60" rx="10" fill="#1e293b" stroke="#059669" stroke-width="2" />
+    <text x="15" y="25" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#ffffff">ResearcherAgric</text>
+    <text x="15" y="43" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">Soil & Seed Trial Data</text>
+  </g>
+
+  <!-- Line to Node 2 -->
+  <line x1="610" y1="140" x2="460" y2="210" stroke="#34d399" stroke-width="2" stroke-dasharray="4" />
+  <!-- Node 2: DevelopmentFinance -->
+  <g transform="translate(560, 100)">
+    <rect x="0" y="0" width="160" height="60" rx="10" fill="#1e293b" stroke="#0284c7" stroke-width="2" />
+    <text x="15" y="25" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#ffffff">DevelopmentFinance</text>
+    <text x="15" y="43" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">World Bank Capital</text>
+  </g>
+
+  <!-- Line to Node 3 -->
+  <line x1="190" y1="340" x2="340" y2="270" stroke="#34d399" stroke-width="2" stroke-dasharray="4" />
+  <!-- Node 3: Farmers & Extension -->
+  <g transform="translate(80, 310)">
+    <rect x="0" y="0" width="160" height="60" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="2" />
+    <text x="15" y="25" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Farmers & Extension</text>
+    <text x="15" y="43" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">Digital Wallet & Yield ID</text>
+  </g>
+
+  <!-- Line to Node 4 -->
+  <line x1="610" y1="340" x2="460" y2="270" stroke="#34d399" stroke-width="2" stroke-dasharray="4" />
+  <!-- Node 4: TrackTraceAgric -->
+  <g transform="translate(560, 310)">
+    <rect x="0" y="0" width="160" height="60" rx="10" fill="#1e293b" stroke="#d97706" stroke-width="2" />
+    <text x="15" y="25" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#ffffff">TrackTraceAgric</text>
+    <text x="15" y="43" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">EUDR Export Passport</text>
+  </g>
+
+  <!-- Bottom Metric Bar -->
+  <rect x="150" y="395" width="500" height="35" rx="8" fill="#0f172a" stroke="#1e293b" />
+  <text x="180" y="417" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#6ee7b7">
+    Zero-Collateral Credit Risk Scoring • 40%+ Smallholder Yield Increase
+  </text>
+</svg>
